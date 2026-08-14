@@ -1,0 +1,13 @@
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/persianFonts/vazir-font-v18.0.0/Vazir-Medium.ttf);
+    src: url(../fonts/persianFonts/vazir-font-v18.0.0/Vazir-Medium.woff);
+    src: url(../fonts/persianFonts/vazir-font-v18.0.0/Vazir-Medium.woff2);
+}
+
+* {
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
