@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
-@theme {
+:root {
     --color-primary: cornflowerblue;
-    --color-regal-blue: #0000ff;
     --font-size: 30px;
+}
+
+@theme {
+    --color-regal-blue: #0000ff;
 }
