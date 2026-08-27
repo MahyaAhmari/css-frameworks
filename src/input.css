@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: vazir;
+    src: url(../assets/fonts/persianFonts/vazir-font-v18.0.0/Vazir-Medium.ttf);
+    src: url(../assets/fonts/persianFonts/vazir-font-v18.0.0/Vazir-Medium.woff);
+    src: url(../assets/fonts/persianFonts/vazir-font-v18.0.0/Vazir-Medium.woff2);
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply px-3 py-2 rounded bg-blue-500 text-white hover:bg-blue-600 cursor-pointer transition-all duration-300;
+    }
+}
+
+@layer utilities {
+    .text-shadow-gold {
+        text-shadow: 0 0 1rem gold;
+    }
+
+    .font-vazir {
+        font-family: vazir;
+    }
+
+    .animate-gradient {
+        background: linear-gradient(-90deg, cornflowerblue, rgb(207, 103, 255), cornflowerblue);
+        background-size: 300% 100%;
+        animation: gradientMove 4s ease-in-out infinite alternate;
+    }
+}
